@@ -1,0 +1,20 @@
+Wed Sep 16 09:29:27 1992  Karl Berry  (karl@hayley)
+
+        * xmalloc.c (xmalloc): use char *, not void *, as some compilers
+          bomb out on the latter.
+
+        * Makefile.in (LOADLIBES): use LIBS instead, as that what's
+          Autoconf wants to define.
+
+        * other.c: remove tests for ^/$ around newlines.
+
+Tue Sep 15 11:01:15 1992  Karl Berry  (karl@hayley)
+
+        * fileregex.c (main): call re_search_2 instead of re_search.
+
+        * Makefile.in (regex.o): make target dregex.o, so VPATH doesn't
+          find ../regex.o.
+
+Sun Sep 13 06:50:03 1992  Karl Berry  (karl@hayley)
+
+        * Created.
